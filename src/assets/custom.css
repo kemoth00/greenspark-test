@@ -1,0 +1,7 @@
+.toggle-unchecked {
+  outline: 1px solid var(--checkbox-hover);
+}
+
+.toggle-checked {
+  outline: 1px solid var(--divider);
+}

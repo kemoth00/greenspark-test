@@ -1,0 +1,24 @@
+:root {
+  --background: #f9f9f9;
+  --title: #212121;
+  --divider: #b0b0b0;
+  --checkbox-hover: #afc6bd;
+  --checkbox-hover-rgba: 175, 198, 189;
+  --radio-selected: #b0b0b0;
+  --toggle-circle-border: #f2ebdb;
+
+  --badge-white: #ffffff;
+  --badge-white-text: #3b755f;
+
+  --badge-black: #212121;
+  --badge-black-text: #f9f9f9;
+
+  --badge-blue: #2e3a8c;
+  --badge-blue-text: #f9f9f9;
+
+  --badge-green: #3b755f;
+  --badge-green-text: #f9f9f9;
+
+  --badge-beige: #f2ebdb;
+  --badge-beige-text: #3b755f;
+}
