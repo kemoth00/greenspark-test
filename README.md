@@ -6,6 +6,12 @@
 npm install
 ```
 
+### Copy .env.example to .env and fill the VITE_BASE_URL
+
+```sh
+VITE_BASE_URL=https://xxxxx.mock.pstmn.io
+```
+
 ### Compile and Hot-Reload for Development
 
 ```sh
