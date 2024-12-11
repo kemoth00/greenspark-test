@@ -20,7 +20,13 @@
     </section>
   </section>
 
-  <SvgIcon v-else name="LoaderIcon" />
+  <div v-else class="flex flex-col items-center justify-center">
+    <SvgIcon name="LoaderIcon" />
+
+    <p v-if="envMissing" class="text-red-500 text-center">
+      VITE_BASE_URL is not defined in the .env file
+    </p>
+  </div>
 </template>
 
 <script lang="ts">
@@ -32,6 +38,7 @@ export default {
   data() {
     return {
       widgets: [] as WidgetInterface[],
+      envMissing: false,
     }
   },
   mounted() {
@@ -43,6 +50,12 @@ export default {
   },
   methods: {
     setInitialData() {
+      if (!import.meta.env.VITE_BASE_URL) {
+        console.error('VITE_BASE_URL is not defined in the .env file')
+        this.envMissing = true
+        return
+      }
+
       axios
         .get(import.meta.env.VITE_BASE_URL + '/product-widgets')
         .then((response) => {
