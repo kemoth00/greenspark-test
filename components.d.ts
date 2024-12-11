@@ -8,7 +8,6 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     App: typeof import('./src/App.vue')['default']
-    Checkbox: typeof import('./src/components/ui/Checkbox.vue')['default']
     CheckboxComponent: typeof import('./src/components/ui/CheckboxComponent.vue')['default']
     ColorSwitchComponent: typeof import('./src/components/ui/ColorSwitchComponent.vue')['default']
     GreensparkLogo: typeof import('./src/assets/icons/GreensparkLogo.vue')['default']
@@ -18,14 +17,9 @@ declare module 'vue' {
     SvgIcon: typeof import('./src/components/essentials/SvgIcon.vue')['default']
     ToggleComponent: typeof import('./src/components/ui/ToggleComponent.vue')['default']
     TooltipComponent: typeof import('./src/components/ui/TooltipComponent.vue')['default']
-    Widget: typeof import('./src/components/Widget.vue')['default']
-    WidgetBadge: typeof import('./src/components/WidgetBadge.vue')['default']
     WidgetBadgeComponent: typeof import('./src/components/WidgetBadgeComponent.vue')['default']
     WidgetComponent: typeof import('./src/components/WidgetComponent.vue')['default']
-    WidgetData: typeof import('./src/components/WidgetData.vue')['default']
-    WidgetPanel: typeof import('./src/components/WidgetPanel.vue')['default']
     WidgetPanelComponent: typeof import('./src/components/WidgetPanelComponent.vue')['default']
-    WidgetSettings: typeof import('./src/components/WidgetSettings.vue')['default']
     WidgetSettingsComponent: typeof import('./src/components/WidgetSettingsComponent.vue')['default']
   }
 }

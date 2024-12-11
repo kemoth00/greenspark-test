@@ -47,7 +47,7 @@ describe('WidgetBadgeComponent', () => {
     testCases.forEach(({ type, amount, expected }) => {
       const wrapper = mount(WidgetBadgeComponent, {
         props: {
-          data: { ...mockData, type, amount },
+          data: { ...mockData, type: type as 'carbon' | 'plastic' | 'trees', amount },
         },
       })
 
