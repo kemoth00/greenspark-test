@@ -15,7 +15,7 @@
         }"
       >
         <div
-          class="relative group bg-whiteC w-6 h-6 -ml-1 rounded-full shadow transform duration-300 ease-in-out border-[0.1px] hover:shadow-[0_0_0_6.5px_rgba(var(--checkbox-hover-rgba),0.5)]"
+          class="relative group bg-whiteC w-6 h-6 -ml-1 rounded-full shadow transform duration-300 ease-in-out border hover:shadow-[0_0_0_6.5px_rgba(var(--checkbox-hover-rgba),0.5)]"
           :class="{
             'translate-x-7 border-greenC': modelValue,
             'border-toggleCircleBorder': !modelValue,
