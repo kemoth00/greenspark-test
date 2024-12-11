@@ -41,8 +41,8 @@ export default {
   },
   emits: ['update:modelValue'],
   methods: {
-    handleChange(test: boolean) {
-      this.$emit('update:modelValue', test)
+    handleChange(value: boolean) {
+      this.$emit('update:modelValue', value)
     },
   },
 }
